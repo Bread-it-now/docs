@@ -2,7 +2,7 @@
  * @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-  default: [
+  introduction: [
     {
       type: 'doc',
       id: 'intro',
@@ -11,12 +11,29 @@ const sidebars = {
     {
       type: 'category',
       label: '사용 가이드',
-      items: ['usage/getting-started'],
+      items: ['introduction/usage/getting-started'],
     },
     {
       type: 'category',
       label: '시스템 아키텍처',
-      items: ['architecture/system-design'],
+      items: ['introduction/architecture/system-design'],
+    },
+  ],
+  document: [
+    {
+      type: 'category',
+      label: 'Design',
+      items: ['document/design/index'],
+    },
+    {
+      type: 'category',
+      label: 'Frontend',
+      items: ['document/frontend/index'],
+    },
+    {
+      type: 'category',
+      label: 'Backend',
+      items: ['document/backend/index'],
     },
   ],
 };

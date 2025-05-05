@@ -67,9 +67,15 @@ const config = {
         {to: '/blog', label: '블로그', position: 'left'},
         {
           type: 'docSidebar',
-          sidebarId: 'default',
+          sidebarId: 'introduction',
           position: 'left',
           label: '소개',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'document',
+          position: 'left',
+          label: '문서',
         },
         {
           href: 'https://github.com/Bread-it-now/docs',
