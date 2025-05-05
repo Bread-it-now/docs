@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'BreadItNow Dev Docs',
-  tagline: 'BreadItNow 개발 문서',
+  title: 'BreadItNow Docs',
+  tagline: '빵잇나우의 개발 문서입니다.',
   favicon: 'img/favicon.png',
 
   url: 'https://Bread-it-now.github.io',
@@ -69,7 +69,7 @@ const config = {
           type: 'docSidebar',
           sidebarId: 'default',
           position: 'left',
-          label: '문서',
+          label: '소개',
         },
         {
           href: 'https://github.com/Bread-it-now/docs',
@@ -85,8 +85,8 @@ const config = {
           title: '문서',
           items: [
             {
-              label: 'Project',
-              to: '/',
+              label: 'Introduction',
+              to: '/docs/intro',
             },
           ],
         },
