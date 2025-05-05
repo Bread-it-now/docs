@@ -109,6 +109,15 @@ const config = {
             },
           ],
         },
+        {
+          title: '문의하기',
+          items: [
+            {
+              label: '문의하기 구글폼',
+              href: 'https://forms.gle/hBkNvLrKqBqijvv78 ',
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Bread-it-now`,
     },
