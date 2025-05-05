@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Bread-it-now.github.io/docs/blog</id>
-    <title>BreadItNow Dev Docs Blog</title>
+    <title>BreadItNow Docs Blog</title>
     <updated>2025-05-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Bread-it-now.github.io/docs/blog"/>
-    <subtitle>BreadItNow Dev Docs Blog</subtitle>
+    <subtitle>BreadItNow Docs Blog</subtitle>
     <icon>https://Bread-it-now.github.io/docs/img/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[First Blog Post]]></title>
