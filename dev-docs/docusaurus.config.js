@@ -78,7 +78,7 @@ const config = {
           label: '문서',
         },
         {
-          href: 'https://github.com/Bread-it-now/docs',
+          href: 'https://github.com/Bread-it-now',
           label: 'GitHub',
           position: 'right',
         },

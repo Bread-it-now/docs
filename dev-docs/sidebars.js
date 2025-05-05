@@ -33,7 +33,14 @@ const sidebars = {
     {
       type: 'category',
       label: 'Backend',
-      items: ['document/backend/index'],
+      items: [
+        'document/backend/index',
+        {
+          type: 'category',
+          label: '리팩토링',
+          items: ['document/backend/refactoring/guide'],
+        },
+      ],
     },
   ],
 };
