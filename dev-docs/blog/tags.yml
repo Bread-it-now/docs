@@ -1,0 +1,19 @@
+breaditnow:
+  label: Breaditnow
+  permalink: /breaditnow
+  description: Breaditnow tag description
+
+hello:
+  label: Hello
+  permalink: /hello
+  description: Hello tag description
+
+backend:
+  label: Backend
+  permalink: /backend
+  description: Backend tag description
+
+frontend:
+  label: Frontend
+  permalink: /frontend
+  description: Frontend tag description

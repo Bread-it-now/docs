@@ -12,12 +12,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'BreadItNow Dev Docs',
   tagline: 'BreadItNow 개발 문서',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   url: 'https://Bread-it-now.github.io',
   baseUrl: '/docs/',
   organizationName: 'Bread-it-now', // Usually your GitHub org/user name.
-  projectName: 'BreadItNow_Docs', // Usually your repo name.
+  projectName: 'docs', // Usually your repo name.
 
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
@@ -38,7 +38,18 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          editUrl:
+            'https://github.com/Bread-it-now/docs/tree/main/dev-docs/',
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -53,6 +64,7 @@ const config = {
         src: 'img/logo.svg',
       },
       items: [
+        {to: '/blog', label: '블로그', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'default',
@@ -60,7 +72,7 @@ const config = {
           label: '문서',
         },
         {
-          href: 'https://github.com/Bread-it-now/BreadItNow_Docs',
+          href: 'https://github.com/Bread-it-now/docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -73,7 +85,7 @@ const config = {
           title: '문서',
           items: [
             {
-              label: '프로젝트 소개',
+              label: 'Project',
               to: '/',
             },
           ],
@@ -82,8 +94,12 @@ const config = {
           title: '더 보기',
           items: [
             {
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
               label: 'GitHub',
-              href: 'https://github.com/Bread-it-now/BreadItNow_Docs',
+              href: 'https://github.com/Bread-it-now',
             },
           ],
         },

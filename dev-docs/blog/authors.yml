@@ -1,0 +1,53 @@
+jimin:
+  name: 손지민
+  title: Back End Engineer
+  url: https://github.com/jmxx219
+  image_url: https://github.com/jmxx219.png
+  page: true
+  socials:
+    github: jmxx219
+
+uigyun:
+  name: 박의균
+  title: BackEnd Engineer
+  url: https://github.com/pug9483
+  image_url: https://github.com/pug9483.png
+  page: true
+  socials:
+    github: pug9483
+
+tyeong:
+  name: 김태영
+  title: BackEnd Engineer
+  url: https://github.com/tyeong1102
+  image_url: https://github.com/tyeong1102.png
+  page: true
+  socials:
+    github: tyeong1102
+
+junho:
+  name: 유준호
+  title: FrontEnd Engineer
+  url: https://github.com/yjh-1008
+  image_url: https://github.com/yjh-1008.png
+  page: true
+  socials:
+    github: yjh-1008
+
+sunghyun:
+  name: 김성현
+  title: FrontEnd Engineer
+  url: https://github.com/SungHyun627
+  image_url: https://github.com/SungHyun627.png
+  page: true
+  socials:
+    github: SungHyun627
+
+jungmi:
+  name: 김정미
+  title: Designer
+  url: https://github.com/Jungmi0826
+  image_url: https://github.com/Jungmi0826.png
+  page: true
+  socials:
+    github: Jungmi0826
