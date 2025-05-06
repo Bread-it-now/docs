@@ -9,3 +9,9 @@
   height: 200px;
   width: 200px;
 }
+
+.description {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #444;
+}

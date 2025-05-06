@@ -4,46 +4,55 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: (
+      <>
+        빵잇나우에서 갓 구운 빵을 <br /> 가장 신선할 때 만나세요!
+      </>
+    ),
+    Svg: require('@site/static/img/breaditnow.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        동네 빵집의 빵을 더 쉽고 편리하게 구매하세요.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: (
+      <>
+        따끈한 빵이 나오는 순간, <br /> 바로 알려드릴게요!
+      </>
+    ),
+    Svg: require('@site/static/img/breaditnow_notification.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        갓 나온 빵, 기다리지 말고 알림으로 먼저 받아보세요.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
+    title: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        먹고 싶은 빵, 미리 예약하고 <br /> 편하게 픽업하세요!
       </>
     ),
-  },
+    Svg: require('@site/static/img/breaditnow_reservation.svg').default,
+    description: (
+      <>
+        원하는 빵을 예약하고 기다림 없이 즐기세요.
+      </>
+    ),
+  }
 ];
 
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
+      <div className="text--center padding-horiz--md">
+        <Heading as="h3" className={styles.title}>{title}</Heading>
+        <p className={styles.description}>{description}</p>
+      </div>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
       </div>
     </div>
   );
