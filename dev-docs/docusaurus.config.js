@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.png',
 
   url: 'https://docs.breaditnow.com',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   organizationName: 'Bread-it-now', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
@@ -92,7 +92,7 @@ const config = {
           items: [
             {
               label: 'Introduction',
-              to: '/docs/intro',
+              to: '/intro',
             },
           ],
         },
