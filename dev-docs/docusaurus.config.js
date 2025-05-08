@@ -14,7 +14,7 @@ const config = {
   tagline: '빵잇나우의 개발 문서입니다.',
   favicon: 'img/favicon.png',
 
-  url: 'https://Bread-it-now.github.io',
+  url: 'https://docs.breaditnow.com',
   baseUrl: '/docs/',
   organizationName: 'Bread-it-now', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
