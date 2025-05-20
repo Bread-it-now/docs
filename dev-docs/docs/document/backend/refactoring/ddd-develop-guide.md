@@ -1,22 +1,22 @@
 ---
-id: guide
+id: ddd-develop-guide
 title: DDD 개발 가이드
-sidebar_label: ✨ 리팩토링
+sidebar_label: ✨ DDD 개발 가이드
 ---
 
-## 도메인(domain)
+## 1 도메인(domain)
 
 도메인(domain) 패키지는 애플리케이션의 핵심 비즈니스 로직을 담고 있으며, 명확한 역할 분리와 유지보수를 위해 다음과 같은 원칙을 지켜야 합니다.
 
-### 1️⃣ 순수 자바 코드 (POJO)
+### 1.1 순수 자바 코드 (POJO)
 
 도메인 패키지에는 Spring, JPA와 같은 프레임워크나 라이브러리 의존성이 없어야 하며, 순수한 Java 코드(POJO)로만 구성되어야 합니다.
 
-### 2️⃣ 일급 객체의 명확한 분리
+### 1.2 일급 객체의 명확한 분리
 
 상태나 데이터를 가지는 객체는 `record`로 정의하여 명확성을 높이고 불변성을 유지해야 합니다.
 
-### 3️⃣ @Builder 사용 원칙
+### 1.3 @Builder 사용 원칙
 
 `@Builder`는 다음과 같은 제한된 상황에서만 사용합니다.
 
@@ -26,7 +26,7 @@ sidebar_label: ✨ 리팩토링
 
 도메인의 핵심 비즈니스 로직이나 서비스 로직에서 무분별한 사용을 피하고, 생성자를 통해 명시적으로 객체를 생성합니다.
 
-### 4️⃣ 다른 애그리거트 참조 방식
+### 1.4 다른 애그리거트 참조 방식
 
 다른 애그리거트를 직접 객체 참조하는 것이 아니라, 반드시 ID를 통해 참조하여 애그리거트 간의 명확한 경계를 유지합니다.
 
@@ -36,13 +36,13 @@ public class Order {
 }
 ```
 
-<br>
+<br/>
 
-## 엔티티(Entity)
+## 2 엔티티(Entity)
 
 엔티티(Entity)는 도메인 모델의 상태를 영속화하기 위해 사용됩니다. 아래 규칙을 준수하여 작성해야 합니다.
 
-### 1️⃣ 애그리거트 루트는 @Entity로 매핑
+### 2.1 애그리거트 루트는 @Entity로 매핑
 
 애그리거트 루트는 반드시 @Entity로 설정하며 JPA에서 관리됩니다.
 
@@ -56,7 +56,7 @@ public class Order {
 }
 ```
 
-### 2️⃣ 엔티티와 밸류가 함께 있는 경우
+### 2.2 엔티티와 밸류가 함께 있는 경우
 
 값 타입(Value Object)은 @Embeddable, 값 타입을 사용하는 프로퍼티는 @Embedded를 사용합니다.
 
@@ -79,7 +79,7 @@ public class Address {
 }
 ```
 
-### 3️⃣ AttributeConverter로 값 타입 매핑
+### 2.3 AttributeConverter로 값 타입 매핑
 
 도메인에서 사용하는 값 타입과 DB의 컬럼 타입을 다르게 매핑할 때 사용합니다.
 
@@ -119,7 +119,7 @@ public class Product {
 }
 ```
 
-### 4️⃣ 값 컬렉션을 별도 테이블로 매핑
+### 2.4 값 컬렉션을 별도 테이블로 매핑
 
 컬렉션 타입(예: List)을 별도의 테이블로 관리합니다. 인덱스가 필요한 경우 @OrderColumn을 사용합니다.
 
@@ -151,7 +151,7 @@ public class OrderLine {
 }
 ```
 
-### 5️⃣ 값 컬렉션을 단일 컬럼에 매핑
+### 2.5 값 컬렉션을 단일 컬럼에 매핑
 
 여러 값을 하나의 컬럼에 저장할 때는 새로운 값 타입을 정의하고 AttributeConverter를 사용합니다.
 
@@ -209,7 +209,7 @@ public class Member {
 }
 ```
 
-### 6️⃣ 값 타입을 ID로 매핑
+### 2.6 값 타입을 ID로 매핑
 
 식별자를 값 타입으로 매핑할 때는 @EmbeddedId를 사용합니다.
 
@@ -233,13 +233,13 @@ public class OrderNo implements Serializable {
     // equals, hashCode 구현 필요
 ```
 
-<br>
+<br/>
 
-## 응용 서비스
+## 3 응용 서비스(Application Service)
 
 응용 서비스는 표현 영역과 도메인 영역을 연결하며, 주로 도메인 객체를 사용하여 사용자의 요청을 처리합니다. `파사드(Facade) 패턴`과 같은 역할을 수행합니다.
 
-### 1️⃣ 응용 서비스의 역할
+### 3.1 응용 서비스의 역할
 
 - 데이터 유효성 검사
 - 도메인 객체 조회 및 변경
@@ -283,18 +283,18 @@ public class SomeApplicationService {
 }
 ```
 
-<br>
+<br/>
 
-## 도메인 서비스
+## 4 도메인 서비스(Domain Service)
 
 도메인 서비스는 여러 애그리거트가 연관된 복잡한 로직이나 외부 시스템 연동 로직을 처리하기 위해 도메인 영역에 위치하며, 상태 없이 순수한 로직만 구현합니다.
 
-### 1️⃣ 도메인 서비스 사용 예시
+### 4.1 도메인 서비스 사용 예시
 
 - 계산 로직 : 여러 애그리거트가 필요한 계산 로직이나 한 애그리거트에 넣기에는 다소 복잡한 계산 로직
 - 외부 시스템 연동이 필요한 도메인 로직 : 구현하기 위해 타 시스템을 사용해야 하는 도메인 로직
 
-### 2️⃣ 도메인 서비스 사용 방법
+### 4.2 도메인 서비스 사용 방법
 
 ```java
 public class DiscountCalculationService {
@@ -312,7 +312,7 @@ public class DiscountCalculationService {
 }
 ```
 
-### 3️⃣ 도메인 서비스 사용 주체
+### 4.3 도메인 서비스 사용 주체
 
 도메인 서비스를 사용하는 주체는 애그리거트가 될 수도 있고, 응용 서비스가 될 수도 있습니다. 애그리거트 객체에 도메인 서비스를 전달하는 것은 응용 서비스의 책임입니다.
 
@@ -349,11 +349,11 @@ public class OrderService {
 }
 ```
 
-![이미지 설명](/dev-docs/static/img/ddd-guide/image1.png)
+![이미지 설명](/img/ddd-guide/image1.png)
 
 도메인 서비스의 구현이 특정 기술에 의존하거나 외부 시스템의 API를 실행한다면 도메인 영역의 도메인 서비스는 인터페이스로 추상화한다.
 
-![이미지 설명](/dev-docs/static/img/ddd-guide/image2.png)
+![이미지 설명](/img/ddd-guide/image2.png)
 
 특정 기능이 응용 서비스인지 도메인 서비스인지 감이 안 잡힐 경우, `해당 로직이 애그리거트의 상태를 변경하거나 애그리거트의 상태 값을 게산하는지 검사해 보면 된다.`
 
@@ -362,17 +362,17 @@ public class OrderService {
 
 이 두 로직은 각각 애그리거트를 변경하고 애그리거트의 값을 계산하는 도메인 로직이다. 도메인 로직이면서 한 애그리거트에 넣기에 적합하지 않음로 이 두 로직은 도메인 서비스로 구현하게 된다.
 
-<br>
+<br/>
 
-## CQRS
+## 5 CQRS
 
 CQRS는 Command(명령)와 Query(조회)를 명확히 분리하여 시스템을 보다 효율적으로 설계하는 패턴입니다.
 
-![이미지 설명](/dev-docs/static/img/ddd-guide/image3.png)
+![이미지 설명](/img/ddd-guide/image3.png)
 
-![이미지 설명](/dev-docs/static/img/ddd-guide/image4.png)
+![이미지 설명](/img/ddd-guide/image4.png)
 
-### 1️⃣ 명령(Command): 상태 변경을 담당
+### 5.1 명령(Command): 상태 변경을 담당
 
 **상태 변경** : 상태 변경 기능은 주로 한 애그리거트의 상태를 변경합니다. 현재 저장하고 있는 데이터를 변경하는 방식으로 기능을 구현한다.
 
@@ -384,9 +384,9 @@ CQRS는 Command(명령)와 Query(조회)를 명확히 분리하여 시스템을 
 
 - command 관련 로직들의 `request`, `response`는 application 계층에 위치시킨다.
 
-<br>
+<br/>
 
-### 2️⃣ 조회(Query): 데이터를 조회하는 기능
+### 5.2 조회(Query): 데이터를 조회하는 기능
 
 - 조회 DAO : `QueryRepository`
 
@@ -398,4 +398,4 @@ CQRS는 Command(명령)와 Query(조회)를 명확히 분리하여 시스템을 
 
 - 만약 추가적으로 로직 처리가 필요하다면 application 패키지에 `dto`를 만든다. application 계층에서 `response`로 변환하여 반환시켜준다.
 
-![이미지 설명](/dev-docs/static/img/ddd-guide/image5.png)
+![이미지 설명](/img/ddd-guide/image5.png)
