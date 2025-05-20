@@ -4,7 +4,7 @@ title: DDD 개발 가이드
 sidebar_label: ✨ DDD 개발 가이드
 ---
 
-## 1 도메인(domain)
+## 1. 도메인(domain)
 
 도메인(domain) 패키지는 애플리케이션의 핵심 비즈니스 로직을 담고 있으며, 명확한 역할 분리와 유지보수를 위해 다음과 같은 원칙을 지켜야 합니다.
 
@@ -38,7 +38,7 @@ public class Order {
 
 <br/>
 
-## 2 엔티티(Entity)
+## 2. 엔티티(Entity)
 
 엔티티(Entity)는 도메인 모델의 상태를 영속화하기 위해 사용됩니다. 아래 규칙을 준수하여 작성해야 합니다.
 
@@ -285,7 +285,7 @@ public class SomeApplicationService {
 
 <br/>
 
-## 4 도메인 서비스(Domain Service)
+## 4. 도메인 서비스(Domain Service)
 
 도메인 서비스는 여러 애그리거트가 연관된 복잡한 로직이나 외부 시스템 연동 로직을 처리하기 위해 도메인 영역에 위치하며, 상태 없이 순수한 로직만 구현합니다.
 
@@ -364,7 +364,7 @@ public class OrderService {
 
 <br/>
 
-## 5 CQRS
+## 5. CQRS
 
 CQRS는 Command(명령)와 Query(조회)를 명확히 분리하여 시스템을 보다 효율적으로 설계하는 패턴입니다.
 
