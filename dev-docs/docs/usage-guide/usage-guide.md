@@ -29,7 +29,7 @@
 
 <br/>
 
-<divp style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+<divp style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
 <img src="/img/usage-guide/customer/로그인.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 <img src="/img/usage-guide/customer/회원가입.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 </divp>
@@ -44,7 +44,7 @@
 - 키워드로 빵 또는 빵집을 검색할 수 있어요.
 - 자동 완성 및 연관 추천 키워드로 빠르게 탐색할 수 있어요.
   <br/><br/>
-  <divp style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+  <divp style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/메인페이지 - 빵집 및 빵 탐색.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/빵 리스트 페이지 - 빵 탐색.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/검색페이지 - 검색.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
@@ -57,7 +57,7 @@
 - 빵집의 주소, 운영시간, 메뉴, 예약 가능 시간 등을 상세히 볼 수 있어요.
   <br/><br/>
 
-<divp style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+<divp style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
 <img src="/img/usage-guide/customer/빵집페이지 상세1.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 <img src="/img/usage-guide/customer/빵집페이지 상세2.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 </divp>
@@ -69,7 +69,7 @@
 - 원하는 메뉴와 수량을 선택한 후 예약할 수 있어요.
 - 예약 전 실시간 수량 확인으로 초과 예약을 방지해요.
   <br/><br/>
-  <divp style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+  <divp style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/빵 예약1.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/빵 예약2.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/빵 예약3.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
@@ -83,7 +83,7 @@
 - 각 예약 별 상세 내용을 확인할 수 있어요.
 - 예약 상세 화면에서 직접 예약을 취소할 수 있어요.
   <br/><br/>
-  <divp style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+  <divp style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/마이페이지 - 예약전체.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/마이페이지 - 예약상세.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/마이페이지 - 예약취소.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
@@ -97,7 +97,7 @@
 - 각 빵집 상세 페이지에서 ⭐ 버튼을 눌러 간편하게 즐겨찾기를 추가할 수 있어요.
 - 마이페이지 내 즐겨찾기 탭에서 내가 저장한 빵 및 빵집 목록을 한눈에 확인할 수 있어요.
   <br/><br/>
-  <divp style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+  <divp style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/빵 즐겨찾기.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/빵집 즐겨찾기.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/즐겨찾기 조회.gif" width="250" height="460"/>
@@ -112,7 +112,7 @@
 - 개별 빵에 대해 알림을 설정할 수 있어요.
 - 전체 알림을 설정할 수 있어요.
 
-<divp style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
+<divp style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
 <img src="/img/usage-guide/customer/알림 내역 조회.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 <img src="/img/usage-guide/customer/개별 빵 알림 onoff.gif" width="300"
 height="550" style={{ border: '1px solid #e8eaec' }} />
