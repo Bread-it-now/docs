@@ -30,8 +30,8 @@
 <br>
 
 <p align="center">
-  <img src="../../static/img/usage-guide/customer/로그인.png" width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/회원가입.png" width="300" height="550">
+  <img src="../../static/img/usage-guide/customer/로그인.png" width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/회원가입.png" width="300" height="550"/>
 </p>
 
 <br>
@@ -45,9 +45,9 @@
 - 자동 완성 및 연관 추천 키워드로 빠르게 탐색할 수 있어요.
 <br><br>
 <p align="center">
-  <img src="../../static/img/usage-guide/customer/메인페이지 - 빵집 및 빵 탐색.gif" width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/빵 리스트 페이지 - 빵 탐색.gif"  width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/검색페이지 - 검색.gif" width="300" height="550">
+  <img src="../../static/img/usage-guide/customer/메인페이지 - 빵집 및 빵 탐색.gif" width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/빵 리스트 페이지 - 빵 탐색.gif"  width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/검색페이지 - 검색.gif" width="300" height="550"/>
 </p>
 
 <br>
@@ -58,8 +58,8 @@
   <br><br>
 
 <p align="center">
-<img src="../../static/img/usage-guide/customer/빵집페이지 상세1.png" width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/빵집페이지 상세2.png" width="300" height="550" style="margin-right: 16px;">  
+<img src="../../static/img/usage-guide/customer/빵집페이지 상세1.png" width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/빵집페이지 상세2.png" width="300" height="550" style="margin-right: 16px;"> / 
 </p>
 
 <br>
@@ -70,9 +70,9 @@
 - 예약 전 실시간 수량 확인으로 초과 예약을 방지해요.
 <br><br>
 <p align="center">
-  <img src="../../static/img/usage-guide/customer/빵 예약1.png" width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/빵 예약2.png"  width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/빵 예약3.png" width="300" height="550">
+  <img src="../../static/img/usage-guide/customer/빵 예약1.png" width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/빵 예약2.png"  width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/빵 예약3.png" width="300" height="550"/>
 </p>
 
 <br>
@@ -84,9 +84,9 @@
 - 예약 상세 화면에서 직접 예약을 취소할 수 있어요.
 <br><br>
 <p align="center">
-  <img src="../../static/img/usage-guide/customer/마이페이지 - 예약전체.gif" width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/마이페이지 - 예약상세.gif"  width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/마이페이지 - 예약취소.gif" width="300" height="550">
+  <img src="../../static/img/usage-guide/customer/마이페이지 - 예약전체.gif" width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/마이페이지 - 예약상세.gif"  width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/마이페이지 - 예약취소.gif" width="300" height="550"/>
 </p>
 
 <br>
@@ -98,9 +98,9 @@
 - 마이페이지 내 즐겨찾기 탭에서 내가 저장한 빵 및 빵집 목록을 한눈에 확인할 수 있어요.
 <br><br>
 <p align="center">
-  <img src="../../static/img/usage-guide/customer/빵 즐겨찾기.gif" width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/빵집 즐겨찾기.gif"  width="300" height="550" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/즐겨찾기 조회.gif" width="300" height="550">
+  <img src="../../static/img/usage-guide/customer/빵 즐겨찾기.gif" width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/빵집 즐겨찾기.gif"  width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/즐겨찾기 조회.gif" width="300" height="550"/>
 </p>
 
 <br>
@@ -113,51 +113,9 @@
 - 전체 알림을 설정할 수 있어요.
 
 <p align="center">
-  <img src="../../static/img/usage-guide/customer/알림 내역 조회.gif" width="230" height="423" style="margin-right: 16px;">
+  <img src="../../static/img/usage-guide/customer/알림 내역 조회.gif" width="230" height="423" style="margin-right: 16px;"/>
   <img src="../../static/img/usage-guide/customer/개별 빵 알림 onoff.gif" width="230"
-  height="423" style="margin-right: 16px;">
-  <img src="../../static/img/usage-guide/customer/방해금지 - 토글.gif" width="230" height="423" style="margin-right: 16px;">
-    <img src="../../static/img/usage-guide/customer/전체 알림 설정.png" width="230" height="423" >
+  height="423" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/방해금지 - 토글.gif" width="230" height="423" style="margin-right: 16px;"/>
+    <img src="../../static/img/usage-guide/customer/전체 알림 설정.png" width="230" height="423" />
 </p>
-
-### ✔︎ 빵집 등록 (사업자)
-
-- 첫 로그인 시 매장 정보를 새롭게 등록할 수 있어요.
-- 운영시간, 주소, 예약 수량, 소개 문구 등을 설정할 수 있어요.
-
-![bakery-register](readme-files/bakery-register.gif)
-
-### ✔︎ 빵집 정보 수정 (사업자)
-
-- 기존 매장 정보를 자유롭게 수정할 수 있어요.
-- 휴무일, 비활성화된 시간대도 설정 가능해요.
-
-![bakery-edit](readme-files/bakery-edit.gif)
-
-### ✔︎ 예약 목록 확인 (사업자)
-
-- 고객 예약 목록을 날짜별로 확인할 수 있어요.
-- 고객이 선택한 메뉴, 수량, 수령 시간 등이 표시돼요.
-
-![reservation-list-owner](readme-files/reservation-list-owner.gif)
-
-### ✔︎ 예약 상태 변경 (사업자)
-
-- 예약 상태를 ‘확정’, ‘준비 중’, ‘수령 완료’ 등으로 변경할 수 있어요.
-- 변경 시 고객에게 자동으로 알림이 발송돼요.
-
-![reservation-status-change](readme-files/reservation-status-change.gif)
-
-### ✔︎ 관리자 인증 및 로그아웃 처리 (사업자)
-
-- `users/me` API를 통해 로그인한 관리자 정보를 조회해요.
-- 인증 만료 시 자동 로그아웃 처리돼요.
-
-![auth-owner](readme-files/auth-owner.gif)
-
-### ✔︎ 알림 수신 (사업자)
-
-- 고객 예약 요청/취소/확정에 대한 알림을 실시간으로 받아요.
-- 빠르게 응답하여 원활한 매장 운영이 가능해요.
-
-![notification-owner](readme-files/notification-owner.gif)
