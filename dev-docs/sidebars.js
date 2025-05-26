@@ -21,7 +21,7 @@ const sidebars = {
     {
       type: 'doc',
       label: '핵심 기능에 대한 사용 가이드',
-      id: 'usage-guide/useage-guide',
+      id: 'usage-guide/usage-guide',
     },
   ],
   document: [
