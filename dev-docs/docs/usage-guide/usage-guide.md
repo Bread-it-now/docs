@@ -58,8 +58,8 @@
   <br/><br/>
 
 <p align="center">
-<img src="../../static/img/usage-guide/customer/빵집페이지 상세1.png" width="300" height="550" style="margin-right: 16px;"/>
-  <img src="../../static/img/usage-guide/customer/빵집페이지 상세2.png" width="300" height="550" style="margin-right: 16px;"> / 
+  <img src="../../static/img/usage-guide/customer/빵집페이지 상세1.png" width="300" height="550" style="margin-right: 16px;"/>
+  <img src="../../static/img/usage-guide/customer/빵집페이지 상세2.png" width="300" height="550" style="margin-right: 16px;"/> 
 </p>
 
 <br/>
