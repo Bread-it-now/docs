@@ -89,8 +89,8 @@
 <br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-<img src="/img/usage-guide/customer/로그인.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/customer/회원가입.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/customer/로그인.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/customer/회원가입.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 </div>
 
 <br/>
@@ -102,19 +102,22 @@
 - 빵 종류별로 핫한 빵, 인기 많은 빵을 확인할 수 있어요.
 - 키워드로 빵 또는 빵집을 검색할 수 있어요.
 - 자동 완성 및 연관 추천 키워드로 빠르게 탐색할 수 있어요.
-  <br/><br/>
-  <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+
+<br/>
+
+<div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/메인페이지 - 빵집 및 빵 탐색.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/빵 리스트 페이지 - 빵 탐색.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/검색페이지 - 검색.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
-  </div>
+ </div>
 
 <br/>
 
 ### ✔︎ 빵집 상세 정보 확인 (고객)
 
 - 빵집의 주소, 운영시간, 메뉴, 예약 가능 시간 등을 상세히 볼 수 있어요.
-  <br/><br/>
+
+<br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/빵집페이지 상세1.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
@@ -127,12 +130,14 @@
 
 - 원하는 메뉴와 수량을 선택한 후 예약할 수 있어요.
 - 예약 전 실시간 수량 확인으로 초과 예약을 방지해요.
-  <br/><br/>
-  <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+
+<br/>
+
+<div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/빵 예약1.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/빵 예약2.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/빵 예약3.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
-  </div>
+</div>
 
 <br/>
 
@@ -141,12 +146,14 @@
 - 마이페이지에서 내 전체 예약 내역을 상태별로 확인할 수 있어요.
 - 각 예약 별 상세 내용을 확인할 수 있어요.
 - 예약 상세 화면에서 직접 예약을 취소할 수 있어요.
-  <br/><br/>
-  <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+
+<br/>
+
+<div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/마이페이지 - 예약전체.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/마이페이지 - 예약상세.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/마이페이지 - 예약취소.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
-  </div>
+</div>
 
 <br/>
 
@@ -155,12 +162,14 @@
 - 마음에 드는 빵 및 빵집을 즐겨찾기에 등록할 수 있어요.
 - 각 빵집 상세 페이지에서 간편하게 즐겨찾기를 추가할 수 있어요.
 - 마이페이지 내 즐겨찾기 탭에서 내가 저장한 빵 및 빵집 목록을 한눈에 확인할 수 있어요.
-  <br/><br/>
-  <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+
+<br/>
+
+<div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/customer/빵 즐겨찾기.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/빵집 즐겨찾기.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
   <img src="/img/usage-guide/customer/즐겨찾기 조회.gif" width="250" height="460"/>
-  </div>
+</div>
 
 <br/>
 
@@ -171,12 +180,14 @@
 - 개별 빵에 대해 알림을 설정할 수 있어요.
 - 전체 알림을 설정할 수 있어요.
 
+<br/>
+
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-<img src="/img/usage-guide/customer/알림 내역 조회.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/customer/개별 빵 알림 onoff.gif" width="300"
-height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/customer/방해금지 - 토글.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/customer/전체 알림 설정.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/customer/알림 내역 조회.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/customer/개별 빵 알림 onoff.gif" width="300"
+  height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/customer/방해금지 - 토글.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/customer/전체 알림 설정.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 </div>
 
 <br/>
@@ -187,12 +198,12 @@ height="550" style={{ border: '1px solid #e8eaec' }} />
 - 로그인 후 본인에게 연결된 매장 정보가 자동으로 조회돼요.
 - 처음 로그인 시 매장 정보가 없을 경우, 빵집 등록 절차로 자동 이동돼요.
 
-<br/><br/>
+<br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/owner/로그인.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
-  <img src="/img/usage-guide/owner/빵집등록.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
-  <img src="/img/usage-guide/owner/빵집등록2.png" width="250" height="460"/>
+  <img src="/img/usage-guide/owner/빵집 등록.png" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/빵집 등록2.png" width="250" height="460"/>
 </div>
 
 <br/>
@@ -203,7 +214,7 @@ height="550" style={{ border: '1px solid #e8eaec' }} />
 - 판매 중지하거나 준비 중인 메뉴는 숨김 처리하여 고객 화면에서 보이지 않게 할 수 있어요.
 - 신선한 빵이 준비되었을 때, 즐겨찾기한 고객에게 알림을 보낼 수 있어요.
 
-<br/><br/>
+<br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/owner/영업 일시 관리.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
@@ -220,14 +231,14 @@ height="550" style={{ border: '1px solid #e8eaec' }} />
 - 휴무일과 비활성화된 예약 시간대 설정도 가능해요.
 - 해당 기능은 ‘빵집 메뉴’ 탭에서 편리하게 이용할 수 있어요.
 
-<br/><br/>
+<br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-<img src="/img/usage-guide/owner/빵집 정보 수정1.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/owner/빵집 정보 수정2.png" width="300"
-height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/owner/빵집 정보 수정3.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/owner/빵집 정보 수정4.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/빵집 정보 수정1.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/빵집 정보 수정2.png" width="300"
+  height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/빵집 정보 수정3.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/빵집 정보 수정4.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 </div>
 
 <br/>
@@ -238,7 +249,7 @@ height="550" style={{ border: '1px solid #e8eaec' }} />
 - 메뉴 비활성화, 삭제, 순서 정렬 등의 작업을 간편하게 할 수 있어요.
 - ‘빵집 메뉴’ 탭에서 관리 기능을 쉽게 사용할 수 있어요.
 
-<br/><br/>
+<br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/owner/빵집메뉴 조회.gif" width="250" height="460" style={{ border: '1px solid #e8eaec' }} />
@@ -254,7 +265,7 @@ height="550" style={{ border: '1px solid #e8eaec' }} />
 - 메뉴 이름, 가격, 설명, 이미지 등을 입력해 상세 정보를 추가할 수 있어요.
 - 기존 메뉴에 대한 정보도 수정 가능해요.
 
-<br/><br/>
+<br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/owner/메뉴 생성.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
@@ -269,14 +280,14 @@ height="550" style={{ border: '1px solid #e8eaec' }} />
 - 각 예약의 상세 내역(메뉴, 수량, 수령 시간 등) 을 확인할 수 있어요.
 - 예약을 상황에 따라 거부하거나 접수, 부분 접수할 수 있어요.
 
-<br/><br/>
+<br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-<img src="/img/usage-guide/owner/예약 내역 조회.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/owner/예약 상세내역.gif" width="300"
-height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/owner/예약 거부.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
-<img src="/img/usage-guide/owner/예약 부분 접수.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/예약 내역 조회.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/예약 상세내역.gif" width="300"
+  height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/예약 거부.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
+  <img src="/img/usage-guide/owner/예약 부분 접수.gif" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
 </div>
 
 <br/>
@@ -286,7 +297,7 @@ height="550" style={{ border: '1px solid #e8eaec' }} />
 - 고객 예약 요청/취소/확정에 대한 알림을 실시간으로 받아요.
 - 빠르게 응답하여 원활한 매장 운영이 가능해요.
 
-<br/><br/>
+<br/>
 
 <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
   <img src="/img/usage-guide/owner/알림 내역 조회.png" width="300" height="550" style={{ border: '1px solid #e8eaec' }} />
