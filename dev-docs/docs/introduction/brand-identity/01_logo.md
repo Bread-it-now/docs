@@ -4,7 +4,7 @@ title: 🔔 로고 디자인
 sidebar_label: 로고 디자인
 ---
 
-![로고 이미지](/img/brand-identity/01_logo.png)
+<img src="/img/brand-identity/01_logo.png" alt="로고 이미지"/>
 
 - **‘B’ 형태의 빵 아이콘**: 브랜드 영문명인 "Bread It Now"의 B 알파벳을 빵의 둥글고 부드러운 형태로 표현했습니다.
 - **‘IT NOW’ 텍스트**: 빵이 막 구워졌다는 실시간성을 강조하기 위해 B 내부에 ‘IT NOW’를 배치했습니다.
