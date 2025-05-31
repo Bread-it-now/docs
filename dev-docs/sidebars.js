@@ -36,26 +36,26 @@ const sidebars = {
     },
   ],
   document: [
+{
+  type: 'category',
+  label: 'Design',
+  items: [
     {
       type: 'category',
-      label: 'Design',
+      label: '디자인 시스템',
       items: [
-        {
-          type: 'category',
-          label: '디자인 시스템',
-          items: [
-            'document/design/design-system/overview',
-            'document/design/design-system/color-system',
-            'document/design/design-system/typography',
-            'document/design/design-system/input',
-            'document/design/design-system/button',
-            'document/design/design-system/thumbnail',
-            'document/design/design-system/illustration',
-            'document/design/design-system/UT',
-          ],
-        },
+        'document/design/design-system/overview',
+        'document/design/design-system/color-system',
+        'document/design/design-system/typography',
+        'document/design/design-system/input',
+        'document/design/design-system/button',
+        'document/design/design-system/thumbnail',
+        'document/design/design-system/illustration',
       ],
     },
+    'document/design/UT',
+  ],
+},
     {
       type: 'category',
       label: 'Frontend',
