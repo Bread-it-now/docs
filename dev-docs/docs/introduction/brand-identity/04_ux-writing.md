@@ -18,9 +18,11 @@ sidebar_label: 🧁 말투 톤 (UX Writing)
 
 <img 
   src="/img/brand-identity/03_design-tone_07.png"
-  style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
+  style={{ maxWidth: "50%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
+  alt="ux writing 예시 이미지" />
 <img 
 src="/img/brand-identity/03_design-tone_08.png"
-style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
+  style={{ maxWidth: "50%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
+  alt="ux writing 예시 이미지" />
 
 사용자가 서비스 내에서 편안히 기다릴 수 있도록 친근한 말투로 안내하는 점이 특징입니다.

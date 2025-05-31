@@ -5,11 +5,13 @@ sidebar_label: 로고 디자인
 ---
 
 <img 
-  src="/img/brand-identity/01_logo_01.png"
-  style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
+  src="/img/brand-identity/01_logo_01.png" 
+  style={{ maxWidth: "50%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
+  alt="로고 이미지" />
 <img 
-src="/img/brand-identity/01_logo_02.png"
-style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
+  src="/img/brand-identity/01_logo_02.png" 
+  style={{ maxWidth: "50%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
+  alt="로고 이미지" />
 
 - **‘B’ 형태의 빵 아이콘**: 브랜드 영문명인 "Bread It Now"의 B 알파벳을 빵의 둥글고 부드러운 형태로 표현했습니다.
 - **‘IT NOW’ 텍스트**: 빵이 막 구워졌다는 실시간성을 강조하기 위해 B 내부에 ‘IT NOW’를 배치했습니다.
