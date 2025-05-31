@@ -39,7 +39,22 @@ const sidebars = {
     {
       type: 'category',
       label: 'Design',
-      items: ['document/design/index'],
+      items: [
+        {
+          type: 'category',
+          label: '디자인 시스템',
+          items: [
+            'document/design/design-system/overview',
+            'document/design/design-system/color-system',
+            'document/design/design-system/typography',
+            'document/design/design-system/input',
+            'document/design/design-system/button',
+            'document/design/design-system/thumbnail',
+            'document/design/design-system/illustration',
+            'document/design/design-system/UT',
+          ],
+        },
+      ],
     },
     {
       type: 'category',
