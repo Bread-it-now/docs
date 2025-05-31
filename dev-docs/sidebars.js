@@ -23,7 +23,7 @@ const sidebars = {
       label: '브랜드 아이덴티티',
       items: [
         'introduction/brand-identity/logo',
-        'introduction/brand-identity/olor',
+        'introduction/brand-identity/color',
         'introduction/brand-identity/design-tone',
         'introduction/brand-identity/ux-writing',
         'introduction/brand-identity/summary',
