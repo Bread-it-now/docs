@@ -22,11 +22,11 @@ const sidebars = {
       type: 'category',
       label: '브랜드 아이덴티티',
       items: [
-        'introduction/brand-identity/01_logo',
-        'introduction/brand-identity/02_color',
-        'introduction/brand-identity/03_design-tone',
-        'introduction/brand-identity/04_ux-writing',
-        'introduction/brand-identity/05_summary',
+        'introduction/brand-identity/logo',
+        'introduction/brand-identity/olor',
+        'introduction/brand-identity/design-tone',
+        'introduction/brand-identity/ux-writing',
+        'introduction/brand-identity/summary',
       ],
     },
     {
