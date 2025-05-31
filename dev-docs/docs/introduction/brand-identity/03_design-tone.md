@@ -18,10 +18,10 @@ sidebar_label: 디자인 톤
 
 <img 
   src="/img/brand-identity/03_design-tone_01.png"
-  style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;">
+  style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
 <img 
 src="/img/brand-identity/03_design-tone_02.png"
-style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;">
+style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
 
 <br/>
 
@@ -34,10 +34,10 @@ style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;">
 
 <img 
   src="/img/brand-identity/03_design-tone_03.png"
-  style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;">
+  style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
 <img 
 src="/img/brand-identity/03_design-tone_04.png"
-style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;">
+style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
 
 <br/>
 
@@ -50,7 +50,7 @@ style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;">
 
 <img 
   src="/img/brand-identity/03_design-tone_05.png"
-  style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;">
+  style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
 <img 
 src="/img/brand-identity/03_design-tone_06.png"
-style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;">
+style="width:300; height:300; border: 1px solid #ccc; border-radius: 20px;"/>
