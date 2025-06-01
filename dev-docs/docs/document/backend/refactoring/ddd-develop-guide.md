@@ -180,16 +180,14 @@ public class EmailSetConverter implements AttributeConverter<EmailSet, String> {
     public String convertToDatabaseColumn(EmailSet attribute) {
         if (attribute == null) return null;
         return attribute.getEmails().stream()
-                        .map(Email::getAddress)
-                        .collect(Collectors.joining(","));
+				.map(Email::getAddress).collect(Collectors.joining(","));
     }
 
     @Override
     public EmailSet convertToEntityAttribute(String dbData) {
         if (dbData == null) return null;
         Set<Email> emailSet = Arrays.stream(dbData.split(","))
-                                    .map(Email::new)
-                                    .collect(Collectors.toSet());
+				.map(Email::new).collect(Collectors.toSet());
         return new EmailSet(emailSet);
     }
 }
@@ -301,8 +299,8 @@ public class DiscountCalculationService {
 	public Money calculateDiscountAmounts(List<OrderLine> orderLines, List<Coupon> coupons, MemberGrade grade) {
 
        Money couponDiscount = coupons.stream()
-						.map(coupon -> calculateDiscount(coupon))
-					    .reduce(Money(0), (v1, v2) -> v1.add(v2));
+				.map(coupon -> calculateDiscount(coupon))
+				.reduce(Money(0), (v1, v2) -> v1.add(v2));
         Money membershipDiscount = calculateDiscount(orderer.getMember().getGrade());
         return couponDiscount.add(membershipDiscount);
     }
@@ -345,7 +343,7 @@ public class OrderService {
         Order order = new Order(orderNo, orderReq.getOrderLines(), orderReq.getCoupons(), createOrderer(member), orderReq.getShippingInfo());
         order.calculateAmounts(this.discountCalculationService, member.getGrade());
         return null;
-		}
+    }
 }
 ```
 
