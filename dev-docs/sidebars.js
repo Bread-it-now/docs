@@ -16,7 +16,10 @@ const sidebars = {
     {
       type: 'category',
       label: '시스템 아키텍처',
-      items: ['introduction/architecture/system-design'],
+      items: [
+        'introduction/architecture/system-design',
+        'introduction/architecture/tech-stack',
+      ],
     },
         {
       type: 'category',
