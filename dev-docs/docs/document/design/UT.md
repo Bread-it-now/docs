@@ -1,7 +1,7 @@
 ---
 id: UT
 title: 🧪 UT 회고 - 빵 알람 설정 플로우 개선
-sidebar_label: 🧪 UT 회고 - 빵 알람 설정 플로우 개선
+sidebar_label: UT 회고 - 빵 알람 설정 플로우 개선
 ---
 
 ## ✅ 테스트 개요
@@ -43,11 +43,11 @@ sidebar_label: 🧪 UT 회고 - 빵 알람 설정 플로우 개선
 
 <img
   src="/img/UT/01_toast-popup.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: '300px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="개선 방향 1 이미지" />
 <img
   src="/img/UT/02_dockbar.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: '300px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="개선 방향 1 이미지" />
 
 <br/>

@@ -1,7 +1,7 @@
 ---
 id: color-system
 title: 🎨 컬러 시스템
-sidebar_label: 🎨 컬러 시스템
+sidebar_label: 컬러 시스템
 ---
 
 빵잇나우의 컬러 시스템은 브랜드 아이덴티티를 시각적으로 표현하는 가장 중요한 요소 중 하나입니다.

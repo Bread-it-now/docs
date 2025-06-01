@@ -1,7 +1,7 @@
 ---
 id: overview
 title: 🥐 빵잇나우 디자인 시스템 개요
-sidebar_label: 🥐 빵잇나우 디자인 시스템 개요
+sidebar_label: 빵잇나우 디자인 시스템 개요
 ---
 
 ### 디자인 철학

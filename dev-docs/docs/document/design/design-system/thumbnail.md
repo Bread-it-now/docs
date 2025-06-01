@@ -1,7 +1,7 @@
 ---
 id: thumbnail
 title: 🖼️ 썸네일
-sidebar_label: 🖼️ 썸네일
+sidebar_label: 썸네일
 ---
 
 ### 사이즈 종류
@@ -16,7 +16,7 @@ sidebar_label: 🖼️ 썸네일
 
 <img
   src="/img/design-system/05_thumbnail_01.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: '300px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="썸네일 크기 이미지" />
 
 <br/>
@@ -35,7 +35,7 @@ sidebar_label: 🖼️ 썸네일
 
 <img
   src="/img/design-system/05_thumbnail_02.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: "50%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="상품 정보 구성 요소 이미지" />
 
 <br/>
@@ -50,9 +50,9 @@ sidebar_label: 🖼️ 썸네일
 
 <img
   src="/img/design-system/05_thumbnail_03.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: "50%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="상품 정보 구성 요소 이미지" />
   <img
   src="/img/design-system/05_thumbnail_04.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: "50%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="상품 정보 구성 요소 이미지" />

@@ -1,7 +1,7 @@
 ---
 id: button
 title: 🔘 버튼
-sidebar_label: 🔘 인풋 컴포넌트
+sidebar_label: 버튼
 ---
 
 ### 사이즈 종류
@@ -28,9 +28,9 @@ sidebar_label: 🔘 인풋 컴포넌트
 
 <img
   src="/img/design-system/04_button_01.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: '300px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="버튼 크기 설명 이미지" />
 <img
   src="/img/design-system/04_button_02.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: '300px', width: '100%', border: '1px solid #e8eaec', borderRadius: '20px' }}
   alt="스타일 및 상태 이미지" />

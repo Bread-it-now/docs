@@ -34,9 +34,7 @@ sidebar_label: 브랜드 컬러
     </tbody>
   </table>
 
-  <img 
-    src="/img/brand-identity/01_logo_02.png" 
-    style={{ maxWidth: "50%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px', marginTop: '20px' }} 
-    alt="브랜드 컬러 이미지" 
-  />
-</div>
+<img 
+  src="/img/brand-identity/02_color.png" 
+  style={{ maxWidth: "100%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
+  alt="브랜드 컬러 이미지" />

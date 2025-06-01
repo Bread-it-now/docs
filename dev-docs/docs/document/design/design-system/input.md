@@ -1,7 +1,7 @@
 ---
 id: input
 title: 🏷️ 인풋 컴포넌트
-sidebar_label: 🏷️ 인풋 컴포넌트
+sidebar_label: 인풋 컴포넌트
 ---
 
 ### 구성 유형
@@ -31,9 +31,9 @@ sidebar_label: 🏷️ 인풋 컴포넌트
 
 <img
   src="/img/design-system/03_input_01.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: '300px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="텍스트 필드 이미지" />
 <img
   src="/img/design-system/03_input_02.png"
-  style={{ maxWidth: "50%", height: "auto" }}
+  style={{ maxWidth: '300px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="이외 인풋 이미지" />

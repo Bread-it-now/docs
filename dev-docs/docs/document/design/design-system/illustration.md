@@ -1,7 +1,7 @@
 ---
 id: illustration
 title: ✏️ 일러스트레이션 스타일
-sidebar_label: ✏️ 일러스트레이션 스타일
+sidebar_label: 일러스트레이션 스타일
 ---
 
 일러스트레이션은 빵잇나우의 브랜드 톤앤매너를 시각적으로 표현하는 주요 디자인 요소입니다. 빵의 따뜻함과 서비스를 사용하는 일상의 즐거움을 직관적으로 전달하며, 사용자 경험의 완성도를 높이는 데 도움을 줍니다.
@@ -10,7 +10,7 @@ sidebar_label: ✏️ 일러스트레이션 스타일
 
 <img
   src="/img/design-system/06_illustration_01.png"
-  style={{ maxWidth: "100%", height: "auto" }}
+  style={{ maxWidth: "100%", height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }} 
   alt="일러스트 그래픽 이미지" />
 
 <br/>
