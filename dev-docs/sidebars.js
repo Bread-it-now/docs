@@ -15,14 +15,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '시스템 아키텍처',
-      items: [
-        'introduction/architecture/system-design',
-        'introduction/architecture/tech-stack',
-      ],
-    },
-        {
-      type: 'category',
       label: '브랜드 아이덴티티',
       items: [
         'introduction/brand-identity/logo',
@@ -30,6 +22,14 @@ const sidebars = {
         'introduction/brand-identity/design-tone',
         'introduction/brand-identity/ux-writing',
         'introduction/brand-identity/summary',
+      ],
+    },
+    {
+      type: 'category',
+      label: '시스템 아키텍처',
+      items: [
+        'introduction/architecture/system-design',
+        'introduction/architecture/tech-stack',
       ],
     },
   ],
