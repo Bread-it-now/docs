@@ -1,7 +1,7 @@
 ---
 id: ux-writing
 title: 🧁 말투 톤 (UX Writing)
-sidebar_label: 🧁 말투 톤 (UX Writing)
+sidebar_label: 말투 톤 (UX Writing)
 ---
 
 빵잇나우의 글은 친절하고 간결하며 따뜻한 말투로 작성되어 있습니다.

@@ -9,9 +9,9 @@ const sidebars = {
       label: '개요',
     },
     {
-      type: 'category',
+      type: 'doc',
       label: '사용 가이드',
-      items: ['introduction/usage/getting-started'],
+      id: 'introduction/getting-started/usage-guide',
     },
     {
       type: 'category',
@@ -31,11 +31,6 @@ const sidebars = {
         'introduction/brand-identity/ux-writing',
         'introduction/brand-identity/summary',
       ],
-    },
-    {
-      type: 'doc',
-      label: '핵심 기능에 대한 사용 가이드',
-      id: 'usage-guide/usage-guide',
     },
   ],
   document: [
