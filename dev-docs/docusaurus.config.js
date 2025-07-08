@@ -94,18 +94,22 @@ const config = {
               label: 'Introduction',
               to: '/intro',
             },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
           ],
         },
         {
           title: '더 보기',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/Bread-it-now',
+            },
+            {
+              label: 'Figma',
+              href: 'https://www.figma.com/design/n2MGz1Dp5gzyRA4yLq2Vu0/-빵잇나우-?node-id=1-25838&t=a149VXiLjo8gSVSW-1',
             },
           ],
         },
