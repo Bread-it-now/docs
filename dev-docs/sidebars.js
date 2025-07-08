@@ -36,11 +36,30 @@ const sidebars = {
   document: [
     {
       type: "category",
+      label: "Backend",
+      items: [
+        "document/backend/index",
+        {
+          type: "category",
+          label: "📁 리팩토링",
+          items: [
+            "document/backend/refactoring/ddd-develop-guide",
+          ],
+        },
+        {
+          type: "category",
+          label: "📁 기능 명세서",
+          items: ["document/backend/requirements/favorite-product"],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Design",
       items: [
         {
           type: "category",
-          label: "디자인 시스템",
+          label: "📁 디자인 시스템",
           items: [
             "document/design/design-system/overview",
             "document/design/design-system/color-system",
@@ -52,31 +71,6 @@ const sidebars = {
           ],
         },
         "document/design/UT",
-      ],
-    },
-    {
-      type: "category",
-      label: "Frontend",
-      items: ["document/frontend/index"],
-    },
-    {
-      type: "category",
-      label: "Backend",
-      items: [
-        "document/backend/index",
-        {
-          type: "category",
-          label: "리팩토링",
-          items: [
-            "document/backend/refactoring/guide",
-            "document/backend/refactoring/ddd-develop-guide",
-          ],
-        },
-        {
-          type: "category",
-          label: "기능 명세서",
-          items: ["document/backend/requirements/favorite-product"],
-        },
       ],
     },
   ],

@@ -1,7 +1,7 @@
 ---
 id: ddd-develop-guide
 title: DDD 개발 가이드
-sidebar_label: ✨ DDD 개발 가이드
+sidebar_label: DDD 개발 가이드
 ---
 
 ## 1. 도메인(domain)
