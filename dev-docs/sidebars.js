@@ -42,14 +42,15 @@ const sidebars = {
         {
           type: "category",
           label: "📁 리팩토링",
-          items: [
-            "document/backend/refactoring/ddd-develop-guide",
-          ],
+          items: ["document/backend/refactoring/ddd-develop-guide"],
         },
         {
           type: "category",
           label: "📁 기능 명세서",
-          items: ["document/backend/requirements/favorite-product"],
+          items: [
+            "document/backend/requirements/sign-up",
+            "document/backend/requirements/favorite-product",
+          ],
         },
       ],
     },
