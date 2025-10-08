@@ -4,65 +4,141 @@ title: 고객 - 회원가입 기능 명세서
 sidebar_label: ✨ 회원가입
 ---
 
-# 🍞 Auth 모듈 아키텍처 기술 문서
+# 🍞 회원가입 기능 명세서
 
-이 문서는 "빵잇나우"의 Auth 모듈이 현재 어떻게 설계되어 있는지,  
-핵심 데이터 모델과 인증 프로세스의 흐름, 그리고 시스템의 주요 특징을 중심으로 설명합니다.
+"빵잇나우" Auth 모듈의 회원가입 프로세스는 직접 회원가입(이메일/비밀번호)과 소셜 로그인 두 가지 방식을 지원하며,  
+회원 생성 이후의 후속 처리는 비동기 이벤트 기반 아키텍처(RabbitMQ)를 통해 안정성과 확장성을 확보합니다.  
+아래 문서는 데이터 모델(ERD), 요청/처리 흐름(Sequence), API 명세, 이벤트 페이로드 및 예외 조건을 정리한 내용입니다.
 
 ---
 
-## 1. 데이터 모델(ERD): 책임 분리와 확장성 중심 설계
+## 1. 데이터 모델 (ERD)
 
-Auth 모듈은 계정(Account)의 식별 정보와 인증 수단(Authentication Method)을 명확히 분리하여 설계되었습니다.  
-각 테이블은 단일 책임 원칙(SRP)에 따라 역할이 구분되어 있습니다.
+Auth 모듈의 핵심 엔티티는 계정(Account), 자체 인증(Local Auth), 소셜 인증(Social Auth)으로 구성됩니다.  
+역할과 책임을 분리해 확장성과 무결성을 확보하도록 설계되어 있습니다.
 
 <img
-src="/img/backend/auth/erd.png"
-style={{ maxWidth: '800px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }}
+src="/img/backend/auth/auth-erd.png"
+style={{ maxWidth: '700px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }}
 alt="Auth Domain" />
 
-- **ACCOUNT**: 시스템 전역 사용자 고유 ID, 역할(CUSTOMER/OWNER), 상태(ACTIVE/DELETED) 등 식별 정보만 관리합니다. 모든 마이크로서비스에서 사용자 식별 기준이 됩니다.
-- **LOCAL_AUTH**: 이메일/비밀번호 기반 인증 정보를 관리합니다. 이메일은 유니크하게 관리되며, 비밀번호는 해시값으로 저장됩니다.
-- **SOCIAL_AUTH**: 소셜 로그인(카카오, 네이버 등) 정보를 관리합니다. 소셜 제공자와 서비스 내 사용자 ID를 별도로 저장합니다.
-
-**주요 특징 및 효과**
-
-- 새로운 인증 방식(예: 휴대폰 인증) 추가 시 ACCOUNT 테이블 변경 없이 별도 테이블만 추가하면 됩니다.
-- 각 테이블의 책임이 명확하여 유지보수와 확장에 유리합니다.
-- 인증 방식별로 유니크 제약, 인덱스, 보안 정책을 독립적으로 적용할 수 있습니다.
+- ACCOUNT: 시스템 전반에서 사용자 식별의 단일 근원
+- LOCAL_AUTH: 이메일 기반 인증 전담, 이메일 유니크 제약 적용
+- SOCIAL_AUTH: 다중 소셜 계정 연계 가능(한 계정에 여러 provider 연결)
 
 ---
 
-## 2. 인증 프로세스 흐름: 비동기 이벤트 기반 아키텍처
+## 2. 직접 회원가입 (Email / Direct Sign-up)
 
-회원가입 및 인증 관련 데이터 생성은 비동기 이벤트 기반으로 처리됩니다.  
-RabbitMQ 메시지 브로커를 활용하여 서비스 간 결합도를 낮추고, 장애 격리 및 확장성을 확보했습니다.
+### 2.1 핵심 로직 흐름 (Sequence Diagram)
 
 <img
-src="/img/backend/auth/sequence.png"
-style={{ maxWidth: '800px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }}
-alt="Auth Domain" />
+src="/img/backend/auth/auth-direct-signup-sequence.png"
+style={{ maxWidth: '800px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }}/>
 
-- **회원가입 처리:** Auth API에서 계정(Account) 및 인증 정보를 저장한 후, AccountCreatedEvent(계정 ID, 역할 등)를 RabbitMQ로 발행합니다.
-- **이벤트 브로드캐스트:** RabbitMQ는 이벤트를 각 서비스(Customer, Owner 등)에 전달합니다.
-- **서비스별 데이터 생성:** 각 서비스는 이벤트를 수신하여 자신의 DB에 필요한 데이터를 생성합니다. 예를 들어, Customer API는 customer DB에 고객 정보를 생성합니다.
+### 2.2 상세 명세
 
-**주요 특징 및 효과**
+- 기능 요구사항
 
-- 서비스 간 직접적인 의존성이 없고, 이벤트 기반으로 느슨하게 연결됩니다.
-- 특정 서비스에 장애가 발생해도 Auth API의 회원가입 기능은 정상적으로 동작합니다. 이벤트는 큐에 안전하게 보관됩니다.
-- 신규 서비스가 추가될 때, 해당 서비스가 이벤트를 구독하기만 하면 연동이 가능합니다.
+  - 입력: email, password, role (CUSTOMER | OWNER)
+  - 이메일 중복 검사 필수
+  - 성공 시 생성된 userId 반환
+  - AccountCreatedEvent 비동기 발행
+
+- API
+
+  - 엔드포인트: `POST /api/v1/auth/sign-up`
+
+  - 요청 예시
+
+    ```json
+    {
+      "email": "customer@example.com",
+      "password": "password123!",
+      "role": "CUSTOMER"
+    }
+    ```
+
+  - 성공 응답(200 OK)
+    ```json
+    {
+      "status": "SUCCESS",
+      "data": {
+        "userId": 1
+      }
+    }
+    ```
+
+- 핵심 처리 흐름(요약)
+
+  1. Controller에서 요청 수신 및 기본 검증(@Valid)
+  2. Service에서 LocalAuthRepository.findByEmail(email)로 중복 검사
+     - 중복 시: BA003 (EMAIL_ALREADY_EXISTS) 반환
+  3. Account 엔티티 생성 및 저장(accountRepository.save)
+  4. 비밀번호 BCrypt 해시 후 LocalAuth 생성 및 저장(localAuthRepository.save)
+  5. 트랜잭션 커밋 완료 후 AccountCreatedEvent(accountId, role) 발행(rabbitTemplate.convertAndSend)
+  6. 이벤트 발행 호출 완료 후 클라이언트에 회원가입 성공(userId) 응답 반환
+  7. 소비자들은 비동기적으로 AccountCreatedEvent를 수신하여 각자 도메인 엔티티 생성 수행
+
+<br/>
+
+- 주요 예외 코드
+  - EMAIL_ALREADY_EXISTS — 이미 가입된 이메일
+  - ROLE_INVALID — role 값 유효하지 않음
+  - INVALID_PASSWORD — 비밀번호 정책 위반
+  - REQUIRED_FIELD_MISSING — 필수 입력값 누락
 
 ---
 
-## 3. 시스템의 주요 장점
+## 3. 소셜 로그인 (신규 가입 포함)
 
-- **확장성:** 인증 방식 추가, 신규 서비스 연동 등 변화에 유연하게 대응할 수 있습니다.
-- **유지보수성:** 각 테이블과 컴포넌트의 책임이 명확하여 코드와 데이터 구조의 이해 및 관리가 쉽습니다.
-- **장애 격리:** 서비스 간 결합도가 낮아 장애가 발생해도 전체 시스템에 영향이 최소화됩니다.
-- **데이터 무결성:** 인증 방식별로 독립적으로 제약 조건과 정책을 적용할 수 있습니다.
+### 3.1 핵심 로직 흐름 (Sequence Diagram)
+
+<img
+src="/img/backend/auth/auth-social-signup-sequence.png"
+style={{ maxWidth: '800px', width: '100%', height: "auto", border: '1px solid #e8eaec', borderRadius: '20px' }}/>
+
+### 3.2 상세 명세
+
+- 기능 요구사항
+
+  - 사용자 소셜 인증 시작: `/oauth2/authorization/{provider}`
+  - 소셜 제공자에서 전달된 provider + providerId로 SOCIAL_AUTH 존재 여부 확인
+  - 신규 사용자: ACCOUNT 생성 + SOCIAL_AUTH 저장 + AccountCreatedEvent 발행
+  - 기존 사용자: 로그인 처리 및 토큰 발급
+
+<br/>
+
+- 토큰/리디렉션
+
+  - 인증 성공 시 Oauth2AuthenticationSuccessHandler가 Access/Refresh Token 발급 및 리디렉션 처리
+  - 실패 시 Oauth2AuthenticationFailureHandler가 지정 URI로 에러 쿼리 파라미터 포함 리디렉션
 
 ---
 
-이 문서는 현재 "빵잇나우" Auth 모듈의 구조와 특징을 중심으로 작성되었습니다.  
-향후 인증 방식 추가, 서비스 확장, 장애 대응 등 다양한 요구사항에 유연하게 대응할 수 있는 기반을 갖추고 있습니다.
+## 4. 비동기 이벤트 처리
+
+회원가입 직후 생성된 계정 정보를 각 도메인 서비스(Customer, Owner)에 전파하기 위한 비동기 프로세스입니다.
+
+가. 이벤트 명세: AccountCreatedEvent
+
+- 목적: 신규 계정 생성이 완료되었음을 시스템 내 다른 서비스에 알립니다.
+- Exchange: `account.events.exchange` (Topic Exchange)
+- Routing Key: `account.created`
+- 페이로드 예시 (AccountCreatedEvent)
+
+  ```json
+  {
+    "accountId": 1,
+    "role": "CUSTOMER"
+  }
+  ```
+
+<br/>
+
+나. 소비자(Consumer) 동작
+
+- Customer API: `customer.account-created.queue`를 구독하며, role이 `CUSTOMER`인 이벤트 수신 시 해당 `accountId`로 `customer` 테이블에 사용자 생성.
+- Owner API: `owner.account-created.queue`를 구독하며, role이 `OWNER`인 이벤트 수신 시 해당 `accountId`로 `owner` 테이블에 사용자 생성.
+
+---
