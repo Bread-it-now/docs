@@ -49,6 +49,7 @@ const sidebars = {
           label: "📁 기능 명세서",
           items: [
             "document/backend/requirements/sign-up",
+            "document/backend/requirements/reservation",
             "document/backend/requirements/favorite-product",
           ],
         },
